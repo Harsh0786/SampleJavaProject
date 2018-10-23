@@ -17,12 +17,12 @@ pipeline {
 
         stage ('Clean') {
             steps {
-                    bat '& mvn clean'
+                    bat 'mvn clean'
             }
              }
 		stage ('Install') {
             steps {
-                    bat '& mvn install'
+                    bat 'mvn install'
             }
              }
 			 
